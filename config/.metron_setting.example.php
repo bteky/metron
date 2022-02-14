@@ -17,10 +17,10 @@ $_MT['style_shadow'] = 'rounded-lg shadow';    // 卡片圆角: rounded / rounde
 $_MT['index_enable'] = false;                // true: 开启落地页 false:关闭落地页,并自动跳转至用户中心  落地页还在咕,先不要开
 
 #####  重要通知弹窗  --------------------------------------------------------------------------------------------
-$_MT['domain_info']  = true;                     // 当用户访问网站的地址不是config设置的, 提示用户转到 config 地址
+$_MT['domain_info']  = false;                     // 当用户访问网站的地址不是config设置的, 提示用户转到 config 地址
 $_MT['domain_time']  = 15;                     // 弹出后间隔多久再提示 (单位:分钟)
 
-$_MT['enable_pop']   = true;                      // 开启右下角重要通知弹窗
+$_MT['enable_pop']   = false;                      // 开启右下角重要通知弹窗
 $_MT['pop_time']     = 1440;                          // 每次弹出间隔多久时间 (单位:分钟)
 
 /**  弹窗内容
@@ -114,15 +114,15 @@ $_MT['nodes_miniName'] = false;     // 允许用户开启节点正则匹配简�
 $_MT['nodes_regex'] = '/\[(.*?)\]/';     // 节点筛选设置中节点名称缩短的正则表达式, 默认 [ ] 中的字符都会被移除
 # 主页订阅框显示哪些订阅     可选: ssr, v2ray, surge, clash, clashr, surfboard, kitsunebi, shadowrocket, quantumult, quantumultx,
 $_MT['index_sub'] = [
-    'ssr',
-    'v2ray',
-    'surge',
+//    'ssr',
+//    'v2ray',
+//    'surge',
     'clash',
-    'clashr',
-    'surfboard',
-    'kitsunebi',
-    'quantumult',
-    'quantumultx',
+//    'clashr',
+//    'surfboard',
+//    'kitsunebi',
+//    'quantumult',
+//    'quantumultx',
     'shadowrocket',
 ];
 # 共享账号
@@ -233,7 +233,7 @@ $_MT['shop_Experience_plan']   = [
  * 商品的支持特性 直接编辑套餐的 [服务支持] 中填写,格式为   true-全球节点分布;false-快速客服响应   减号左边 true:代表支持 false:代表不支持 右边为文字, 以英文分号;隔开
  */
 $_MT['shop_plan'] = array(
-    '青铜套餐' => array(                    //  对应商店显示的名称
+    '企业套餐' => array(                    //  对应商店显示的名称
         '描述' => array(  //  对应的商品描述, 目前取消了
             '月付' => 1,                   // 对应的商品ID
             '季度' => 2,
@@ -241,13 +241,13 @@ $_MT['shop_plan'] = array(
             '年付' => 4,
         ),
     ),
-    '白银套餐' => array(            // 需要多个套餐可以自己复制array增加到下面
-        '描述' => array(
-            '月付' => 5,
-            '季度' => 6,
-            '年付' => 8,
-        ),
-    ),
+//    '白银套餐' => array(            // 需要多个套餐可以自己复制array增加到下面
+//        '描述' => array(
+//            '月付' => 5,
+//            '季度' => 6,
+//            '年付' => 8,
+//        ),
+//    ),
 );
 
 # ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -260,7 +260,7 @@ $_MT['enable_node_load']         = true;   // 是否显示节点的负载
 $_MT['node_flag_mode']           = 'name';   // name: 从节点名字正则匹配地区(正则方法在.config.php国旗选项) info: 为从节点状态取值，在节点列表里编辑节点，填写节点状态为 us 则显示美国国旗。us这个是国家ISO 3166码，不懂就谷歌。
 $_MT['node_class_name']          = [   //  节点的等级对应的名字
     0 => '公益节点',   // 格式为 节点等级 => 节点等级名字
-    1 => '青铜节点',
+    1 => 'tiktok节点',
     2 => '白银节点',
     3 => '钻石节点',
 ];
@@ -286,11 +286,18 @@ $_MT['Telegram_Payment'] = true;    // 用户充值提醒
  */
 $_MT['client_windows'] = [
     'clash' => array(           // 一个array为一个客户端, 可以自行增加或删除
-        'name'  => 'Bob加速器',      // 客户端名称
-        'img'   => 'https://img-youpai.weixiaoi.com/tu/2021/0406/1617693954210406.png',        // 图标, 使用png透明文件
+        'name'  => 'Clash',      // 客户端名称
+        'img'   => '/theme/metron/images/clashr-ico.png',        // 图标, 使用png透明文件
         'url'   => '/user/tutorial?os=Windows&client=Clash',      // 安装教程的url地址
-        'down'  => 'https://www.google.com',              // 教程页里的客户端下载地址
-        'vs'    => 'v3.2.4',     // 版本号
+        'down'  => 'https://cloud.06dn.com/s/AOxqFg',              // 教程页里的客户端下载地址
+        'vs'    => 'v0.18.0',     // 版本号
+    ),
+    'V2rayN' => array(           // 一个array为一个客户端, 可以自行增加或删除
+        'name'  => 'V2rayN',      // 客户端名称
+        'img'   => '/theme/metron/images/v2rayn-ico.png',        // 图标, 使用png透明文件
+        'url'   => '/user/tutorial?os=Windows&client=V2rayN',      // 安装教程的url地址
+        'down'  => 'https://cloud.06dn.com/s/3xE4FO',              // 教程页里的客户端下载地址
+        'vs'    => 'v4.20',     // 版本号
     ),
 ];
 
@@ -299,11 +306,11 @@ $_MT['client_windows'] = [
  */
 $_MT['client_android'] = [
     'clash' => array(
-        'name'  => 'Bob加速器',
-        'img'   => 'https://img-youpai.weixiaoi.com/tu/2021/0406/1617693954210406.png',
+        'name'  => 'Clash',
+        'img'   => '/theme/metron/images/clashr-ico.png',
         'url'   => '/user/tutorial?os=Android&client=Clash',
-        'down'  => 'https://www.google.com',
-        'vs'    => 'v2.0.0',
+        'down'  => 'https://cloud.06dn.com/s/KV4JiO',
+        'vs'    => 'v2.3.18',
     ),
 ];
 
@@ -313,11 +320,11 @@ $_MT['client_android'] = [
  */
 $_MT['client_macos'] = [
     'clash' => array(
-        'name'  => 'Bob加速器',
-        'img'   => 'https://img-youpai.weixiaoi.com/tu/2021/0406/1617693954210406.png',
+        'name'  => 'ClashX',
+        'img'   => '/theme/metron/images/clashr-ico.png',
         'url'   => '/user/tutorial?os=MacOS&client=Clash',
-        'down'  => 'https://www.google.com',
-        'vs'    => 'v3.2.4',
+        'down'  => 'https://cloud.06dn.com/s/1RDbTk',
+        'vs'    => 'v1.50.1',
     ),
 ];
 
@@ -331,17 +338,17 @@ $_MT['client_ios'] = [
         'url'   => '/user/tutorial?os=iOS&client=Shadowrocket',
         'vs'    => 'v0.10.0',
     ),
-    'Quantumult' => array(
-        'name'  => 'Quantumult',
-        'img'   => $_MT['assets_url'].'/media/client-logos/quantumult-ico.png',
-        'url'   => '/user/tutorial?os=iOS&client=Quantumult',
-        'vs'    => 'v1.1.0.1',
-    ),
+//    'Quantumult' => array(
+//        'name'  => 'Quantumult',
+//        'img'   => $_MT['assets_url'].'/media/client-logos/quantumult-ico.png',
+//        'url'   => '/user/tutorial?os=iOS&client=Quantumult',
+//        'vs'    => 'v1.1.0.1',
+//    ),
 ];
 # 教程页共享账号
 $_MT['ios_class']    = 2;    //iOS账户多少级以上可见(包括)
-$_MT['ios_account']  = '';    //iOS账户
-$_MT['ios_password'] = '';    //ios密码
+$_MT['ios_account']  = 'awkys96@gmail.com';    //iOS账户
+$_MT['ios_password'] = 'Nxkys883';    //ios密码
 
 # ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 # │                                              任务计划 设置                                               │

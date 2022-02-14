@@ -20,12 +20,12 @@
                                             </li>
                                             <li class="menu-item menu-item-submenu menu-item-rel">
                                                 <a href="/user/code" class="menu-link">
-                                                    <span class="menu-text"><strong>我的钱包</strong></span>
+                                                    <span class="menu-text"><strong>钱包</strong></span>
                                                 </a>
                                             </li>
                                             <li class="menu-item menu-item-submenu menu-item-rel">
                                                 <a href="/user/shop" class="menu-link">
-                                                    <span class="menu-text"><strong>商店服务</strong></span>
+                                                    <span class="menu-text"><strong>套餐商店</strong></span>
                                                 </a>
                                             </li>
                                             <li class="menu-item menu-item-submenu menu-item-rel">
@@ -171,13 +171,13 @@
                                                     </ul>
                                                 </div>
                                             </li>
-                                            {if $metron['shared_account_enable'] === true}
-                                            <li class="menu-item menu-item-submenu menu-item-rel">
-                                                <a href="/user/shared_account" class="menu-link">
-                                                    <span class="menu-text"><strong>共享账号</strong></span>
-                                                </a>
-                                            </li>
-                                            {/if}
+{*                                            {if $metron['shared_account_enable'] === true}*}
+{*                                            <li class="menu-item menu-item-submenu menu-item-rel">*}
+{*                                                <a href="/user/shared_account" class="menu-link">*}
+{*                                                    <span class="menu-text"><strong>共享账号</strong></span>*}
+{*                                                </a>*}
+{*                                            </li>*}
+{*                                            {/if}*}
                                             {if $config['enable_ticket'] === true}
                                             <li class="menu-item menu-item-submenu menu-item-rel">
                                                 <a href="/user/ticket" class="menu-link">
@@ -190,11 +190,11 @@
                                                     <span class="menu-text"><strong>使用教程</strong></span>
                                                 </a>
                                             </li>
-                                            <li class="menu-item menu-item-submenu menu-item-rel">
-                                                <a href="/user/help" class="menu-link" target="_blank">
-                                                    <span class="menu-text"><strong>在线QQ</strong></span>
-                                                </a>
-                                            </li>
+{*                                            <li class="menu-item menu-item-submenu menu-item-rel">*}
+{*                                                <a href="/user/help" class="menu-link" target="_blank">*}
+{*                                                    <span class="menu-text"><strong>在线QQ</strong></span>*}
+{*                                                </a>*}
+{*                                            </li>*}
                                             {if $metron['agent_menu_enable'] === true && $user->agent > 0}
                                             <li class="menu-item menu-item-submenu menu-item-rel">
                                                 <a href="/user/agent" class="menu-link">

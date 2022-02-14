@@ -32,7 +32,7 @@ $_ENV['db_host'] = '';
 $_ENV['db_socket'] = '';
 $_ENV['db_database'] = 'sspanel';           //数据库名
 $_ENV['db_username'] = 'root';              //数据库用户名
-$_ENV['db_password'] = '123456';           //用户名对应的密码
+$_ENV['db_password'] = 'nm_mysql_Admin6688';           //用户名对应的密码
 #高级
 $_ENV['db_charset'] = 'utf8';
 $_ENV['db_collation'] = 'utf8_general_ci';
@@ -50,20 +50,20 @@ $_ENV['mailgun_domain'] = '';
 $_ENV['mailgun_sender'] = '';
 
 # smtp
-$_ENV['smtp_host'] = '';                          // SMTP 邮局服务器域名
-$_ENV['smtp_username'] = '';                          // SMTP 账户名
-$_ENV['smtp_password'] = '';                           // SMTP 账户密码
+$_ENV['smtp_host'] = 'smtp.zoho.com';                          // SMTP 邮局服务器域名
+$_ENV['smtp_username'] = 'hi@nxkys.com';                          // SMTP 账户名
+$_ENV['smtp_password'] = 'nx_Admin6688';                           // SMTP 账户密码
 $_ENV['smtp_port'] = 465;                         // SMTP 端口(常见端口 25, 587 465)
-$_ENV['smtp_name'] = '';                          // SMTP 发信名称
-$_ENV['smtp_sender'] = '';                          // SMTP 账户发信地址
+$_ENV['smtp_name'] = '灵猫加速器';                          // SMTP 发信名称
+$_ENV['smtp_sender'] = 'hi@nxkys.com';                          // SMTP 账户发信地址
 $_ENV['smtp_ssl'] = true;                        // 是否使用 TLS/SSL 发信
 $_ENV['smtp_reply_to'] = $_ENV['smtp_username'];      // 用户回复邮件的接受地址
 $_ENV['smtp_reply_to_name'] = $_ENV['smtp_sender'];        // 回复地址显示名
 
 # sendgrid
 $_ENV['sendgrid_key'] = '';
-$_ENV['sendgrid_sender'] = '';       //发件邮箱
-$_ENV['sendgrid_name'] = '';       //发件人名称
+$_ENV['sendgrid_sender'] = 'nxkys.com';       //发件邮箱
+$_ENV['sendgrid_name'] = '灵猫加速器';       //发件人名称
 
 # 阿里云邮件推送 WEB API
 # 阿里云api发信参数以及域名查看地址 https://help.aliyun.com/document_detail/96856.html
@@ -111,7 +111,7 @@ $_ENV['auto_clean_uncheck_days'] = -1;           //自动清理多少天没签�
 $_ENV['auto_clean_unused_days'] = -1;           //自动清理多少天没使用的0级用户，小于等于0时关闭
 $_ENV['auto_clean_min_money'] = 1;            //余额低于多少的0级用户可以被清理
 
-$_ENV['code_payback'] = 20;           //充值返利百分比
+$_ENV['code_payback'] = 10;           //充值返利百分比
 $_ENV['invite_gift'] = 2;            //邀请新用户获得流量奖励，单位G
 
 $_ENV['enable_bought_reset'] = true;         //购买时是否重置流量
