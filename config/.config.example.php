@@ -18,7 +18,7 @@ $_ENV['key'] = '1145141919810';                //!!! 瞎 jb 修改此key为随�
 $_ENV['debug'] = false;                          //正式环境请确保为 false
 $_ENV['appName'] = '灵猫加速器';                      //站点名称
 $_ENV['baseUrl'] = 'https://nxyyds.xyz';               //站点地址
-$_ENV['muKey'] = 'default_mu_key';               //用于校验魔改后端请求，可以随意修改，但请保持前后端一致，否则节点不能工作！
+$_ENV['muKey'] = 'nm_best_key';               //用于校验魔改后端请求，可以随意修改，但请保持前后端一致，否则节点不能工作！
 
 //添加主题首页
 $_ENV['metron_index']    = 'index';  //index:metron原生  index_malio:马里奥   index_zhujike:主机壳  index_cool:cool主题  index_jdy:悟空主题
@@ -29,7 +29,7 @@ $_ENV['metron_index']    = 'index';  //index:metron原生  index_malio:马里奥
 // db_socket 例：/var/run/mysqld/mysqld.sock（需使用绝对地址）
 $_ENV['db_driver'] = 'mysql';
 $_ENV['db_host'] = '';
-$_ENV['db_socket'] = '';
+$_ENV['db_socket'] = '/var/run/mysqld/mysqld.sock';
 $_ENV['db_database'] = 'sspanel';           //数据库名
 $_ENV['db_username'] = 'root';              //数据库用户名
 $_ENV['db_password'] = 'nm_mysql_Admin6688';           //用户名对应的密码
