@@ -82,11 +82,11 @@ $_MT['disable_mailbox_list']        = [ '@bcaoo.com', '@chacuo.net', '@tmpmail.n
 # ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 # │                                              客服系统 设置                                                │
 # └──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-$_MT['enable_cust']                 = 'none';                   // 使用哪种客服系统  none: 关闭 目前支持: crisp | chatra
+$_MT['enable_cust']                 = 'crisp';                   // 使用哪种客服系统  none: 关闭 目前支持: crisp | chatra
 $_MT['enable_cust_auth']            = true;                     // 在登录注册页显示客服
 
 # crisp  |  https://crisp.chat
-$_MT['crisp_id']                    = '';  // Crisp 的网站ID，格式类似 '18b46e92-eb21-76d3-bfb7-8f2ae9adba64'
+$_MT['crisp_id']                    = '054821a8-6453-4a5f-b791-0b1b4163ea33';  // Crisp 的网站ID，格式类似 '18b46e92-eb21-76d3-bfb7-8f2ae9adba64'
 
 # chatra  |  https://chatra.io
 $_MT['chatra_id']                   = '';  // Chatra 的 ChatraID，可以在 Chatra 提供的网站代码里找到
