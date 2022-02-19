@@ -8,18 +8,18 @@
                 <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
                     {include file='include/global/menu.tpl'}
                     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-                        <div class="subheader min-h-lg-175px pt-5 pb-7 subheader-transparent" id="kt_subheader">
-                            <div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
-                                <div class="d-flex align-items-center flex-wrap mr-2">
-                                    <div class="d-flex flex-column">
-                                        <h2 class="text-white font-weight-bold my-2 mr-5">套餐商店</h2>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <a href="javascript:;" class="btn {$style[$theme_style]['global']['btn_subheader']} font-weight-bold py-3 px-6" data-toggle="modal" data-target="#traffic_package_modal">购买流量包</a>
-                                </div>
-                            </div>
-                        </div>
+{*                        <div class="subheader min-h-lg-175px pt-5 pb-7 subheader-transparent" id="kt_subheader">*}
+{*                            <div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">*}
+{*                                <div class="d-flex align-items-center flex-wrap mr-2">*}
+{*                                    <div class="d-flex flex-column">*}
+{*                                        <h2 class="text-white font-weight-bold my-2 mr-5">套餐商店</h2>*}
+{*                                    </div>*}
+{*                                </div>*}
+{*                                <div class="d-flex align-items-center">*}
+{*                                    <a href="javascript:;" class="btn {$style[$theme_style]['global']['btn_subheader']} font-weight-bold py-3 px-6" data-toggle="modal" data-target="#traffic_package_modal">购买流量包</a>*}
+{*                                </div>*}
+{*                            </div>*}
+{*                        </div>*}
 
                         <div class="d-flex flex-column-fluid">
                             <div class="container">
