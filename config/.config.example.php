@@ -382,7 +382,7 @@ $_ENV['flag_regex'] = '/(香港|美国|日本|中国|俄罗斯|韩国|英国|新
 $_ENV['enable_donate'] = false;          //是否显示用户捐赠（所有收入将被公开）
 
 #iOS账户显示
-$_ENV['display_ios_class'] = -1;        //至少等级为多少的用户可以看见，小于0时关闭此功能
+$_ENV['display_ios_class'] = 1;        //至少等级为多少的用户可以看见，小于0时关闭此功能
 $_ENV['display_ios_topup'] = 0;         //满足等级要求后，累计充值高于多少的用户可以看见
 $_ENV['ios_account'] = '';        //iOS账户
 $_ENV['ios_password'] = '';        //iOS密码
