@@ -384,8 +384,8 @@ $_ENV['enable_donate'] = false;          //是否显示用户捐赠（所有收�
 #iOS账户显示
 $_ENV['display_ios_class'] = 1;        //至少等级为多少的用户可以看见，小于0时关闭此功能
 $_ENV['display_ios_topup'] = 0;         //满足等级要求后，累计充值高于多少的用户可以看见
-$_ENV['ios_account'] = '';        //iOS账户
-$_ENV['ios_password'] = '';        //iOS密码
+$_ENV['ios_account'] = 'awkys96@gmail.com';        //iOS账户
+$_ENV['ios_password'] = 'Nxkys712';        //iOS密码
 
 #用户中心首页添加其他客户端的支持，可配合 subconverter 等 Api
 $_ENV['userCenterClient'] = [
