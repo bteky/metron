@@ -295,7 +295,7 @@
                 </span>
                 </label>
                 <div class="form-group row form-group-marginless" style="display: none" id="shop_payment">
-                    <label class="col-lg-12 col-form-label kt-font-boldest">支付方式：<font color="red" size=4>请联系右下角在线客服，购买优惠码支付</font></label>
+                    <label class="col-lg-12 col-form-label kt-font-boldest">支付方式：</label>
                     <div class="col-lg-12">
                         <ul class="dashboard-tabs nav nav-pills row row-paddingless m-0 p-0" role="tablist" id="pay_the">
                         {if $config['payment_system'] == 'metronpay'}
@@ -355,7 +355,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success" id="use_coupon_code" onclick="shop.coupon();">使用优惠码</button>
+{*                <button type="button" class="btn btn-success" id="use_coupon_code" onclick="shop.coupon();">使用优惠码</button>*}
                 <button type="button" class="btn btn-primary" data-dismiss="modal" id="order_input" onclick="shop.buyok('{$config['payment_system']}');">确定购买</button>
                 <button type="button" class="btn {$style[$theme_style]['modal']['btn_close']} font-weight-bold" data-dismiss="modal" onclick="shop.coupon('clear');">取消</button>
             </div>
