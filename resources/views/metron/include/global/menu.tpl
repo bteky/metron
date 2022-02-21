@@ -185,11 +185,11 @@
                                                 </a>
                                             </li>
                                             {/if}
-                                            <li class="menu-item menu-item-submenu menu-item-rel">
-                                                <a href="/user/help" class="menu-link">
-                                                    <span class="menu-text"><strong>使用教程</strong></span>
-                                                </a>
-                                            </li>
+{*                                            <li class="menu-item menu-item-submenu menu-item-rel">*}
+{*                                                <a href="/user/help" class="menu-link">*}
+{*                                                    <span class="menu-text"><strong>使用教程</strong></span>*}
+{*                                                </a>*}
+{*                                            </li>*}
 {*                                            <li class="menu-item menu-item-submenu menu-item-rel">*}
 {*                                                <a href="/user/help" class="menu-link" target="_blank">*}
 {*                                                    <span class="menu-text"><strong>在线QQ</strong></span>*}

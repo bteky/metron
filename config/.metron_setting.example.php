@@ -344,7 +344,7 @@ $_MT['client_ios'] = [
 //    ),
 ];
 # 教程页共享账号
-$_MT['ios_class']    = 0;    //iOS账户多少级以上可见(包括)
+$_MT['ios_class']    = 1;    //iOS账户多少级以上可见(包括)
 $_MT['ios_account']  = 'tkyyds2@gmail.com';    //iOS账户
 $_MT['ios_password'] = 'Tkyyds123';    //ios密码
 
