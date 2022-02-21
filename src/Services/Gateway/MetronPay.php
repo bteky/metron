@@ -427,7 +427,7 @@ class MetronPay extends AbstractPayment
                     return json_encode($return);
             }
         } else {
-            return json_encode(['ret' => 0, 'msg' => '错误的支付方式']);
+            return json_encode(['ret' => 0, 'msg' => '请联系右下角在线客服']);
         }
     }
 

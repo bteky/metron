@@ -23,13 +23,13 @@
                                                     <li class="nav-item d-flex col flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0 cursor_onclick">
                                                         <a class="nav-link border d-flex flex-grow-1 rounded flex-column align-items-center" data-toggle="pill" href="#tab_macos">
                                                             <span class="nav-icon py-2 w-auto"><i class="fab la-apple icon-3x"></i></span>
-                                                            <span class="nav-text font-size-lg py-2 font-weight-bold text-center">Mac OS</span>
+                                                            <span class="nav-text font-size-lg py-2 font-weight-bold text-center">Mac</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item d-flex col flex-grow-1 flex-shrink-0 mr-3 mb-3 mb-lg-0 cursor_onclick">
                                                         <a class="nav-link border d-flex flex-grow-1 rounded flex-column align-items-center" data-toggle="pill" href="#tab_ios">
                                                             <span class="nav-icon py-2 w-auto"><i class="fab la-apple icon-3x"></i></span>
-                                                            <span class="nav-text font-size-lg py-2 font-weight-bold text-center">iPhone OS</span>
+                                                            <span class="nav-text font-size-lg py-2 font-weight-bold text-center">iPhone</span>
                                                         </a>
                                                     </li>
                                                 </ul>

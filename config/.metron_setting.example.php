@@ -85,7 +85,7 @@ $_MT['enable_cust']                 = 'crisp';                   // 使用哪种
 $_MT['enable_cust_auth']            = true;                     // 在登录注册页显示客服
 
 # crisp  |  https://crisp.chat
-$_MT['crisp_id']                    = '054821a8-6453-4a5f-b791-0b1b4163ea33';  // Crisp 的网站ID，格式类似 '18b46e92-eb21-76d3-bfb7-8f2ae9adba64'
+$_MT['crisp_id']                    = 'ed253baa-da61-4a0f-a146-6c14dac83c19';  // Crisp 的网站ID，格式类似 '18b46e92-eb21-76d3-bfb7-8f2ae9adba64'
 
 # chatra  |  https://chatra.io
 $_MT['chatra_id']                   = '';  // Chatra 的 ChatraID，可以在 Chatra 提供的网站代码里找到
@@ -344,9 +344,9 @@ $_MT['client_ios'] = [
 //    ),
 ];
 # 教程页共享账号
-$_MT['ios_class']    = 1;    //iOS账户多少级以上可见(包括)
-$_MT['ios_account']  = 'awkys96@gmail.com';    //iOS账户
-$_MT['ios_password'] = 'Nxkys712';    //ios密码
+$_MT['ios_class']    = 0;    //iOS账户多少级以上可见(包括)
+$_MT['ios_account']  = 'tkyyds2@gmail.com';    //iOS账户
+$_MT['ios_password'] = 'Tkyyds123';    //ios密码
 
 # ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 # │                                              任务计划 设置                                               │
