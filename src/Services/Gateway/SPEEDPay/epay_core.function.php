@@ -16,7 +16,7 @@
  */
 function createLinkstring($para) {
 	$arg  = "";
-    foreach ($para as $key=>$val){
+	foreach ($para as $key=>$val){
 		$arg.=$key."=".$val."&";
 	}
 	//去掉最后一个&字符
@@ -34,7 +34,7 @@ function createLinkstring($para) {
  */
 function createLinkstringUrlencode($para) {
 	$arg  = "";
-    foreach ($para as $key=>$val){
+	foreach ($para as $key=>$val){
         $arg.=$key."=".$val."&";
     }
     //去掉最后一个&字符

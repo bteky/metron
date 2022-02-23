@@ -1,7 +1,7 @@
 <?php
 /* *
  * 类名：EpaySubmit
- * 功能：SAF易支付接口请求提交类
+ * 功能：易支付接口请求提交类
  * 详细：构造易支付接口表单HTML文本，获取远程HTTP数据
  */
 namespace App\Services\Gateway;
@@ -78,15 +78,12 @@ class AlipaySubmit {
      * @param $button_name 确认按钮显示文字
      * @return 提交表单HTML文本
      */
-	function buildRequestForm($para_temp, $method='POST', $button_name='正在跳转') {
+	/*function buildRequestForm($para_temp, $method='POST', $button_name='正在跳转') {
 		//待请求参数数组
 		$para = $this->buildRequestPara($para_temp);
 		
-		$url = $this->alipay_gateway_new . createLinkstring($para);
-		return $url;
-
-		$sHtml = "<form id='alipaysubmit' name='alipaysubmit' target='_blank' action='".$this->alipay_gateway_new."_input_charset=".trim(strtolower($this->alipay_config['input_charset']))."' method='".$method."'>";
-        foreach ($para as $key=>$val){
+		$sHtml = "<form id='alipaysubmit' name='alipaysubmit' action='".$this->alipay_gateway_new."_input_charset=".trim(strtolower($this->alipay_config['input_charset']))."' method='".$method."'>";
+		foreach ($para as $key=>$val){
             $sHtml.= "<input type='hidden' name='".$key."' value='".$val."'/>";
         }
 
@@ -96,6 +93,19 @@ class AlipaySubmit {
 		$sHtml = $sHtml."<script>document.forms['alipaysubmit'].submit();</script>";
 		
 		return $sHtml;
+	}*/
+	function buildRequestForm($para_temp, $method='POST', $button_name='正在跳转') {
+		//待请求参数数组
+		$para = $this->buildRequestPara($para_temp);
+		
+		$sHtml = "<form id='alipaysubmit' name='alipaysubmit' action='".$this->alipay_gateway_new."_input_charset=".trim(strtolower($this->alipay_config['input_charset']))."' method='".$method."'>";
+		foreach ($para as $key=>$val){
+		    $arg.=$key."=".$val."&";
+	    }
+	    //去掉最后一个&字符
+	    $arg = rtrim($arg,'&');
+	    $url = $this->alipay_gateway_new.$arg;
+		return $url;
 	}
 }
 ?>

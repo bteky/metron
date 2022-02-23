@@ -1,10 +1,13 @@
 <?php
 /* *
  * 类名：EpayNotify
- * 功能：蜂维易支付通知处理类
+ * 功能：易支付通知处理类
  * 详细：处理易支付接口通知返回
  */
-namespace App\Services\Gateway\PcexPay;
+namespace App\Services\Gateway;
+require_once("epay_core.function.php");
+require_once("epay_md5.function.php");
+
 class AlipayNotify {
 
 	var $alipay_config;
@@ -76,16 +79,16 @@ class AlipayNotify {
      */
 	function getSignVeryfy($para_temp, $sign) {
 		//除去待签名参数数组中的空值和签名参数
-		$para_filter = $this->paraFilter($para_temp);
+		$para_filter = paraFilter($para_temp);
 		
 		//对待签名参数数组排序
-		$para_sort = $this->argSort($para_filter);
+		$para_sort = argSort($para_filter);
 		
 		//把数组所有元素，按照“参数=参数值”的模式用“&”字符拼接成字符串
-		$prestr = $this->createLinkstring($para_sort);
+		$prestr = createLinkstring($para_sort);
 		
 		$isSgin = false;
-		$isSgin = $this->md5Verify($prestr, $sign, $this->alipay_config['key']);
+		$isSgin = md5Verify($prestr, $sign, $this->alipay_config['key']);
 		
 		return $isSgin;
 	}
@@ -113,76 +116,6 @@ class AlipayNotify {
 		$responseTxt = getHttpResponseGET($veryfy_url, $this->alipay_config['cacert']);
 		
 		return $responseTxt;
-	}
-	/**
-	 * 除去数组中的空值和签名参数
-	 * @param $para 签名参数组
-	 * return 去掉空值与签名参数后的新签名参数组
-	 */
-	function paraFilter($para) {
-		$para_filter = array();
-		while (list ($key, $val) = @each ($para)) {
-			if($key == "sign" || $key == "sign_type" || $val == "")continue;
-			else	$para_filter[$key] = $para[$key];
-		}
-		return $para_filter;
-	}
-	/**
-	 * 对数组排序
-	 * @param $para 排序前的数组
-	 * return 排序后的数组
-	 */
-	function argSort($para) {
-		ksort($para);
-		reset($para);
-		return $para;
-	}
-	/**
-	 * 把数组所有元素，按照“参数=参数值”的模式用“&”字符拼接成字符串
-	 * @param $para 需要拼接的数组
-	 * return 拼接完成以后的字符串
-	 */
-	function createLinkstring($para) {
-		$arg  = "";
-		while (list ($key, $val) = @each ($para)) {
-			$arg.=$key."=".$val."&";
-		}
-		//去掉最后一个&字符
-		$arg = substr($arg,0,strlen($arg)-1);
-		
-		//如果存在转义字符，那么去掉转义
-		if(get_magic_quotes_gpc()){$arg = stripslashes($arg);}
-		
-		return $arg;
-	}
-	/**
-	 * 签名字符串
-	 * @param $prestr 需要签名的字符串
-	 * @param $key 私钥
-	 * return 签名结果
-	 */
-	function md5Sign($prestr, $key) {
-		$prestr = $prestr . $key;
-		return md5($prestr);
-	}
-	
-	/**
-	 * 验证签名
-	 * @param $prestr 需要签名的字符串
-	 * @param $sign 签名结果
-	 * @param $key 私钥
-	 * return 签名结果
-	 */
-	function md5Verify($prestr, $sign, $key) {
-		$prestr = $prestr . $key;
-		$mysgin = md5($prestr);
-	
-		if($mysgin == $sign) {
-			return true;
-		}
-		else {
-			return false;
-		}
 	}
 }
 ?>
