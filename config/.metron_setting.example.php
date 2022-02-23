@@ -69,8 +69,8 @@ $_MT['take_account_type']   = [ '支付宝', 'USDT-ERC20', 'USDT-TRC20'];  // �
 $_MT['user_level'] = [      // 等级 => 对应的名称显示
    -1 => '暂未激活',
     0 => '免费会员',
-    1 => '个人会员',
-    11 => '企业会员',
+    1 => '白银会员',
+    2 => '黄金会员',
 ];
 #####  用户注册  --------------------------------------------------------------------------------------------
 $_MT['register_code']               = false;          // true: 注册必须邀请码, false: 邀请码可不填 (admin面板 - 用户注册 - 将注册模式改为 invite)
@@ -85,7 +85,7 @@ $_MT['enable_cust']                 = 'crisp';                   // 使用哪种
 $_MT['enable_cust_auth']            = true;                     // 在登录注册页显示客服
 
 # crisp  |  https://crisp.chat
-$_MT['crisp_id']                    = 'ed253baa-da61-4a0f-a146-6c14dac83c19';  // Crisp 的网站ID，格式类似 '18b46e92-eb21-76d3-bfb7-8f2ae9adba64'
+$_MT['crisp_id']                    = 'dfedd6ce-e3c9-4c8d-bdb1-b03229a9bb8c';  // Crisp 的网站ID，格式类似 '18b46e92-eb21-76d3-bfb7-8f2ae9adba64'
 
 # chatra  |  https://chatra.io
 $_MT['chatra_id']                   = '';  // Chatra 的 ChatraID，可以在 Chatra 提供的网站代码里找到
@@ -179,7 +179,7 @@ $_MT['shared_account'] = [
 # 微信  : codepay | stripe | paytaro | wolfpay_ur | payjs
 # QQ钱包: codepay |
 
-$_MT['pay_alipay']     = 'none';        // 支付宝默认
+$_MT['pay_alipay']     = 'theadpay';        // 支付宝默认
 $_MT['max_alipay_num'] = 0;     // 使用支付宝支付时, 金额大于等于设定值, 使用下方支付方式 (设置 0 不使用)
 $_MT['max_alipay_pay'] = 'none';      // 支付金额大于上面设置的值时, 使用此支付方式
 
@@ -204,8 +204,8 @@ $_MT['shop_conversion_mode']   = 'auto';
 $_MT['shop_conversion']        = false;                      // 允许套餐折算返还余额
 $_MT['shop_formalities']       = 2;                      // 套餐折算时扣除手续费 (单位: 百分比, 0 为不扣手续费) 不建议太高免得挨骂
 
-$_MT['advanceResetFlow']       = false;                  // 提前重置流量
-$_MT['resetFlow_maxValue']     = -1;                     // 用户流量低于多少(GB)时,才允许重置, -1为不限制
+$_MT['advanceResetFlow']       = true;                  // 提前重置流量
+$_MT['resetFlow_maxValue']     = 2;                     // 用户流量低于多少(GB)时,才允许重置, -1为不限制
 
 $_MT['shop_pop_enable']         = true;                 // 商店套餐顶部显示信息, 可用于显示给用户促销,优惠等
 $_MT['shop_pop_info']           = '
@@ -258,9 +258,8 @@ $_MT['enable_node_load']         = true;   // 是否显示节点的负载
 $_MT['node_flag_mode']           = 'name';   // name: 从节点名字正则匹配地区(正则方法在.config.php国旗选项) info: 为从节点状态取值，在节点列表里编辑节点，填写节点状态为 us 则显示美国国旗。us这个是国家ISO 3166码，不懂就谷歌。
 $_MT['node_class_name']          = [   //  节点的等级对应的名字
     0 => '公益节点',   // 格式为 节点等级 => 节点等级名字
-    1 => '个人节点',
-    11 => '企业节点',
-//    3 => '钻石节点',
+    1 => '白银节点',
+    2 => '黄金节点',
 ];
 
 # ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -345,8 +344,8 @@ $_MT['client_ios'] = [
 ];
 # 教程页共享账号
 $_MT['ios_class']    = 1;    //iOS账户多少级以上可见(包括)
-$_MT['ios_account']  = 'tk120110@163.com';    //iOS账户
-$_MT['ios_password'] = 'Tk112233';    //ios密码
+$_MT['ios_account']  = 'awkys96@gmail.com';    //iOS账户
+$_MT['ios_password'] = 'Best7891';    //ios密码
 
 # ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 # │                                              任务计划 设置                                               │

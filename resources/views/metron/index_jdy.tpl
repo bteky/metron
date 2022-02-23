@@ -11,7 +11,7 @@
 
 
     <link rel="shortcut icon" type="image/x-icon" href="/theme/malio/imgm/icon/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <!-- Place favicon1.ico in the root directory -->
 
     <!-- all css here -->
     <link rel="stylesheet" href="/theme/wukong/css/bootstrap.min.css">

@@ -20,7 +20,7 @@
     <div class="login login-1 login-signin-on d-flex flex-row-fluid" id="kt_login">
         <!-- http://shige.group/such/pic.php/forum/pic/item/060828381f30e92492f5737d5b086e061d95f72d/mlike.jpg -->
         {*                <div class="d-flex flex-center bgi-size-cover bgi-no-repeat flex-row-fluid" style="background-image:url('../../images/bg01.jpeg');">*}
-        <div class="d-flex flex-center bgi-size-cover bgi-no-repeat flex-row-fluid" style="background-image: url(/theme/metron/images/useful/bg-tk.png);">
+        <div class="d-flex flex-center bgi-size-cover bgi-no-repeat flex-row-fluid" style="background-image: url(/theme/metron/images/useful/bg-01.png);">
             <div class="login-form text-center text-white p-7 position-relative overflow-hidden">
                 <div class="d-flex flex-center mb-10">
                     <a href="/">

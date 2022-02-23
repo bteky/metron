@@ -16,9 +16,9 @@ $_ENV['version'] = 2;    //仅当涉及【需要修改config以外的文件】�
 //基本设置--------------------------------------------------------------------------------------------
 $_ENV['key'] = '1145141919810';                //!!! 瞎 jb 修改此key为随机字符串确保网站安全 !!!
 $_ENV['debug'] = false;                          //正式环境请确保为 false
-$_ENV['appName'] = 'TK加速器';                      //站点名称
-$_ENV['baseUrl'] = 'https://www.oneky.xyz';               //站点地址
-$_ENV['muKey'] = 'tk_best_key';               //用于校验魔改后端请求，可以随意修改，但请保持前后端一致，否则节点不能工作！
+$_ENV['appName'] = '柚子加速器';                      //站点名称
+$_ENV['baseUrl'] = 'https://www.yzyyds.xyz';               //站点地址
+$_ENV['muKey'] = 'yz_yyds_key';               //用于校验魔改后端请求，可以随意修改，但请保持前后端一致，否则节点不能工作！
 
 //添加主题首页
 $_ENV['metron_index']    = 'index';  //index:metron原生  index_malio:马里奥   index_zhujike:主机壳  index_cool:cool主题  index_jdy:悟空主题
@@ -32,7 +32,7 @@ $_ENV['db_host'] = '';
 $_ENV['db_socket'] = '/var/run/mysqld/mysqld.sock';
 $_ENV['db_database'] = 'sspanel';           //数据库名
 $_ENV['db_username'] = 'root';              //数据库用户名
-$_ENV['db_password'] = 'tk_mysql_Admin6688';           //用户名对应的密码
+$_ENV['db_password'] = 'yz_mysql_Admin6688';           //用户名对应的密码
 
 #高级
 $_ENV['db_charset'] = 'utf8';
@@ -64,7 +64,7 @@ $_ENV['smtp_reply_to_name'] = $_ENV['smtp_sender'];        // 回复地址显示
 # sendgrid
 $_ENV['sendgrid_key'] = '';
 $_ENV['sendgrid_sender'] = 'nxkys.com';       //发件邮箱
-$_ENV['sendgrid_name'] = 'TK加速器';       //发件人名称
+$_ENV['sendgrid_name'] = '柚子加速器';       //发件人名称
 
 # 阿里云邮件推送 WEB API
 # 阿里云api发信参数以及域名查看地址 https://help.aliyun.com/document_detail/96856.html
@@ -312,9 +312,12 @@ $_ENV['merchant_private_key'] = '';
 $_ENV['f2fNotifyUrl'] = null;           //自定义当面付回调地址
 
 #THeadPay 平头哥支付
-$_ENV['theadpay_url'] = 'https://jk.theadpay.com/v1/jk/orders';
-$_ENV['theadpay_mchid'] = '';
-$_ENV['theadpay_key'] = '';
+//$_ENV['theadpay_url'] = 'https://jk.theadpay.com/v1/jk/orders';
+//$_ENV['theadpay_mchid'] = '';
+//$_ENV['theadpay_key'] = '';
+$_ENV['theadpay_url'] = 'https://api.yuanser.xyz/v1/jk/orders';
+$_ENV['theadpay_mchid'] = 'vqz6V8RVsgAH9dhx';
+$_ENV['theadpay_key'] = '92fLqUb8YIchOwhVyHfP6AvOg8WIRgpf';
 
 #PaymentWall
 $_ENV['pmw_publickey'] = '';
