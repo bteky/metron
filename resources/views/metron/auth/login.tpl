@@ -48,7 +48,7 @@
         </form>
         <div class="mt-10">
             <span class="opacity-70 mr-4">还没有账号 ?</span>
-            <a href="/auth/register" class="text-white font-weight-bold">立即注册</a>
+            <a href="/auth/register" class="text-green font-weight-bold">立即注册</a>
         </div>
         <div class="mt-10">
             <span class="opacity-70 mr-4">支持 Android、iPhone/iPad、Windows、MacOS</span>

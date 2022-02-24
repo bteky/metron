@@ -112,7 +112,7 @@
         </form>
         <div class="mt-10">
             <span class="opacity-70 mr-4">已经有账号 ?</span>
-            <a href="/auth/login" class="text-white font-weight-bold">立即登录</a>
+            <a href="/auth/login" class="text-green font-weight-bold">立即登录</a>
         </div>
         <div class="mt-10">
             <span class="opacity-70 mr-4">支持 Android、iPhone/iPad、Windows、MacOS</span>
