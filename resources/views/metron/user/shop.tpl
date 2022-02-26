@@ -295,7 +295,7 @@
                 </span>
                 </label>
                 <div class="form-group row form-group-marginless" style="display: none" id="shop_payment">
-                    <label class="col-lg-12 col-form-label kt-font-boldest">支付方式：</label>
+                    <label class="col-lg-12 col-form-label kt-font-boldest">支付方式：<font color="#8b0000" size=3>请在浏览器登录本网站购买，微信登录无法打开网页</font></label>
                     <div class="col-lg-12">
                         <ul class="dashboard-tabs nav nav-pills row row-paddingless m-0 p-0" role="tablist" id="pay_the">
                         {if $config['payment_system'] == 'metronpay'}
