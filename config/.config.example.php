@@ -16,9 +16,9 @@ $_ENV['version'] = 2;    //仅当涉及【需要修改config以外的文件】�
 //基本设置--------------------------------------------------------------------------------------------
 $_ENV['key'] = '1145141919810';                //!!! 瞎 jb 修改此key为随机字符串确保网站安全 !!!
 $_ENV['debug'] = false;                          //正式环境请确保为 false
-$_ENV['appName'] = 'TK加速器';                      //站点名称
+$_ENV['appName'] = '橘子加速器';                      //站点名称
 $_ENV['baseUrl'] = 'https://www.oneky.xyz';               //站点地址
-$_ENV['muKey'] = 'tk_best_key';               //用于校验魔改后端请求，可以随意修改，但请保持前后端一致，否则节点不能工作！
+$_ENV['muKey'] = 'jz_best_key';               //用于校验魔改后端请求，可以随意修改，但请保持前后端一致，否则节点不能工作！
 
 //添加主题首页
 $_ENV['metron_index']    = 'index';  //index:metron原生  index_malio:马里奥   index_zhujike:主机壳  index_cool:cool主题  index_jdy:悟空主题

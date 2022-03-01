@@ -244,8 +244,6 @@
                         <p>连接密码：<code id="nodeinfo-v2rayPlug-modal-passwd"></code></p>
                         <p>混淆方式：<code id="nodeinfo-v2rayPlug-modal-obfs"></code></p>
                         <p>混淆参数：<code id="nodeinfo-v2rayPlug-modal-obfs_param"></code></p>
-                        <p>SS 链接：<code class="cursor_onclick copy-modal" id="nodeinfo-v2rayPlug-modal-url"
-                                          data-clipboard-text="#">点击复制</code></p>
                     </div>
                 </div>
                 <div class="modal-footer">
