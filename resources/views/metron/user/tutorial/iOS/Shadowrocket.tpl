@@ -109,6 +109,7 @@
                                                     <a class="image-popup-no-margins" href="/theme/metron/images/ios/ios-3.jpg" data-lightbox="images">
                                                         <img class="rounded-lg" style="width:100%" src="/theme/metron/images/ios/ios-3.jpg"/></a>
                                                     <br />
+                                                    <br />
                                                     <p class="font-size-h3 pb-2"><code>4.</code>添加线路，请用苹果自带浏览器(Safari)登录网站,导入节点后，点击<code>允许</code>vpn验证，即可连接!</p>
                                                     <div class="btn-group mb-3 mr-3">
                                                         <button type="button" class="btn btn-pill btn-shadowrocket dropdown-item" href="##" onclick="importSublink('shadowrocket')">&nbsp;&nbsp;<i class="metron-shadowrocket text-white"></i>点击一键导入 Shadowrocket&nbsp;&nbsp;</button>
