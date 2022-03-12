@@ -120,6 +120,27 @@
                                                         <img class="rounded-lg" style="width:100%" src="/theme/metron/images/ios/ios-4.jpg"/></a>
                                                     <br />
                                                     <br />
+                                                    <div class="alert alert-custom alert-outline-primary fade show mb-5" role="alert">
+                                                        <div class="alert-icon">
+                                                            <i class="flaticon-warning"></i>
+                                                        </div>
+                                                        <div class="alert-text">
+                                                            <p class="mb-2">无法一键导入? 试试手动设置订阅</p>
+                                                            <div class="btn-group mb-3 mr-3">
+                                                                <button type="button" class="btn btn-pill btn-shadowrocket dropdown-item copy-text" href="##" data-clipboard-text="{$subInfo["shadowrocket"]}">&nbsp;&nbsp;<i class="metron-shadowrocket text-white"></i>复制 Shadowrocket 订阅&nbsp;&nbsp;</button>
+                                                            </div>
+                                                            <p class="mb-2">在APP首页点击右上角 + 号</p>
+                                                            <p class="mb-2">类型 选择 <code>Subscribe</code> , 并粘贴订阅地址到URL一栏, 备注填写 {$config["appName"]} - 点击完成</p>
+                                                        </div>
+                                                        <div class="alert-close">
+                                                            <button type="button" class="close" data-dismiss="alert" aria-label="关">
+                                                                    <span aria-hidden="true">
+                                                                        <i class="ki ki-close"></i>
+                                                                    </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <br />
                                                     <p class="mb-2">点击底栏的 <code>设置</code> -> <code>订阅</code> -> 启用 <code>打开时更新</code></p>
                                                     <p class="mb-2">这样以后每次打开客户端都会自动更新最新节点</p>
                                                 </div>
