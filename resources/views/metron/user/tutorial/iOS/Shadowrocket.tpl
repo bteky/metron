@@ -55,14 +55,12 @@
 
                                             <div class="row p-5">
                                                 <div class="col-sm-12 col-md-12 col-lg-7 pb-5">
-                                                    <p class="mb-5"><code>1.</code>要登录海外账户首先要把自己的账户退出，打开手机<code>APP store</code> -&gt; <code>右上角点击你的头像然后下拉到最下方并退出。</code></p>
-                                                    <br />
+                                                    <p class="font-size-h3 pb-2"><code>1.</code>要登录海外账户首先要把自己的账户退出，打开手机<code>APP store</code> -&gt; <code>右上角点击你的头像然后下拉到最下方并退出。</code></p>
                                                     <a class="image-popup-no-margins" href="/theme/metron/images/ios/ios-1.jpg" data-lightbox="images">
                                                         <img class="rounded-lg" style="width:100%" src="/theme/metron/images/ios/ios-1.jpg"/></a>
                                                     <br />
                                                     <br />
-                                                    <p class="mb-5"><code>2.</code>打开apple store复制下面的海外账户账号与密码点击登录（切记！是apple store登录，不是设置里面登录！），<span style="color: green; font-size: medium; ">跳过双重验证：</span><code>苹果商店(登录下面账号)</code> -&gt; <code>其他选项</code> -&gt; <code>不升级</code></p>
-                                                    <br />
+                                                    <p class="font-size-h3 pb-2"><code>2.</code>打开apple store复制下面的海外账户账号与密码点击登录（切记！是apple store登录，不是设置里面登录！），<span style="color: green; font-size: medium; ">跳过双重验证：</span><code>苹果商店(登录下面账号)</code> -&gt; <code>其他选项</code> -&gt; <code>不升级</code></p>
                                                     {if $metron['ios_account'] != ''}
                                                         {if $user->class >= $metron['ios_class'] && $user->class != 10}
                                                             <div class="input-group mb-3 col-md-8 col-lg-8">
@@ -107,14 +105,11 @@
                                                         <img class="rounded-lg" style="width:100%" src="/theme/metron/images/ios/ios-2.jpg"/></a>
                                                     <br />
                                                     <br />
-                                                    <p class="mb-5"><code>3.</code>登录成功后，点击苹果商店右下角搜索 <code>Shadowrocket</code> 下载安装</p>
-                                                    <br />
+                                                    <p class="font-size-h3 pb-2"><code>3.</code>登录成功后，点击苹果商店右下角搜索 <code>Shadowrocket</code> 下载安装</p>
                                                     <a class="image-popup-no-margins" href="/theme/metron/images/ios/ios-3.jpg" data-lightbox="images">
                                                         <img class="rounded-lg" style="width:100%" src="/theme/metron/images/ios/ios-3.jpg"/></a>
                                                     <br />
-                                                    <br />
-                                                    <p class="mb-3"><code>4.</code>添加线路，请用苹果自带浏览器(Safari)登录网站,导入节点后，点击<code>允许</code>vpn验证，即可连接!</p>
-                                                    <br />
+                                                    <p class="font-size-h3 pb-2"><code>4.</code>添加线路，请用苹果自带浏览器(Safari)登录网站,导入节点后，点击<code>允许</code>vpn验证，即可连接!</p>
                                                     <div class="btn-group mb-3 mr-3">
                                                         <button type="button" class="btn btn-pill btn-shadowrocket dropdown-item" href="##" onclick="importSublink('shadowrocket')">&nbsp;&nbsp;<i class="metron-shadowrocket text-white"></i>点击一键导入 Shadowrocket&nbsp;&nbsp;</button>
                                                     </div>
