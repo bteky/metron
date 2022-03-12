@@ -43,10 +43,11 @@
                                                         {*                                                            <p>Shadowrocket是一款基于规则的网络调试工具，具有性能高和稳定好、使用流畅，功能多样的特点，只占用最少的系统资源，全盘接管所有的连接，根据规则来进行处理，让你无忧无虑。独有的场景模式，方便根据不同需求自动切换配置及节点。</p>*}
                                                         <code>连接失败，请联系网站右下角在线客服</code>
                                                     </div>
-                                                </div>
-                                                <div class="col-sm-12 col-md-12 col-lg-5">
-                                                    <a class="image-popup-no-margins" href="{$metron['assets_url']}/media/tutorial/ios/shadowrocket/shadowrocket.jpg" data-lightbox="images">
-                                                        <img class="rounded-lg" style="width:100%" src="{$metron['assets_url']}/media/tutorial/ios/shadowrocket/shadowrocket.jpg"/></a>
+                                                    <div class="col-sm-12 col-md-12 col-lg-7 pb-5">
+                                                        <a class="image-popup-no-margins" href="/theme/metron/images/ios/ios-1.mp4">
+                                                            <p class="font-size-h2 pt-10 pb-1"><strong>点击查看视频教程</strong></p>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
 
