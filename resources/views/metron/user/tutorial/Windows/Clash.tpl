@@ -80,11 +80,19 @@
                                                     <p class="font-size-h1 pb-5"><strong>1. 下载客户端</strong></p>
                                                     <!-- 结束 :: 段落标题 -->
                                                     <!-- 开始 :: 客户端下载按钮 -->
-                                                    <a href="{$metron['client_windows']['clash']['down']}" class="btn btn-pill btn-clash mb-4" target="_blank">&nbsp;&nbsp;<i class="metron-clash text-white"></i>下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
+                                                    <a href="https://down.ssvipmail.xyz/client/win.exe" class="btn btn-pill btn-clash mb-4" target="_blank">&nbsp;&nbsp;<i class="metron-clash text-white"></i>点击下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
                                                     <!-- 结束 :: 客户端下载按钮 -->
                                                     <br />
+                                                    <div class="h6 pt-2">
+                                                        <a href="{$metron['client_windows']['clash']['down']}" target="_blank">&nbsp;&nbsp;备用下载链接</a>&nbsp;&nbsp;
+                                                        下载后<code>解压</code>，安装从桌面打开
+                                                        <br />
+                                                        <br />
+                                                        或在目录中打开 <code>Clash for Windows.exe</code>
+                                                    </div>
                                                     <br />
-                                                    <div class="h6 pt-2">下载后<code>解压</code>，安装从桌面打开<br />或在目录中打开 <code>Clash for Windows.exe</code></div>
+
+
                                                 </div>
                                                 <!-- 开始 :: 图片 -->
                                                 <div class="col-sm-12 col-md-12 col-lg-5">
