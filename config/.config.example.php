@@ -51,7 +51,7 @@ $_ENV['mailgun_domain'] = '';
 $_ENV['mailgun_sender'] = '';
 
 # smtp
-$_ENV['smtp_host'] = 'smtp.zoho.com.cn';                          // SMTP 邮局服务器域名
+$_ENV['smtp_host'] = 'smtp.zoho.com';                          // SMTP 邮局服务器域名
 $_ENV['smtp_username'] = 'yz@ssvipmail.xyz';                          // SMTP 账户名
 $_ENV['smtp_password'] = 'yz_Admin123';                           // SMTP 账户密码
 $_ENV['smtp_port'] = 465;                         // SMTP 端口(常见端口 25, 587 465)
