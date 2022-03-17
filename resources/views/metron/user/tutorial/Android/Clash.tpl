@@ -69,9 +69,11 @@
                                             <div class="row p-5">
                                                 <div class="col-sm-12 col-md-12 col-lg-7 pb-5">
                                                     <p class="font-size-h1 pb-5"><strong>1. 下载客户端</strong></p>
-                                                    <a href="{$metron['client_android']['clash']['down']}" class="btn btn-pill btn-clash mb-4">&nbsp;&nbsp;<i class="metron-clash text-white"></i>下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
-                                                    <p class="mb-2">点击上方按钮下载客户端并进行安装</p>
-                                                    {*  <p class="mb-2">启动客户端并进行下面操作</p>*}
+                                                    <a href="https://down.ssvipmail.xyz/client/android.apk" class="btn btn-pill btn-clash mb-4">&nbsp;&nbsp;<i class="metron-clash text-white"></i>点击下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
+                                                    <p class="mb-2">
+                                                        点击上方按钮下载客户端并进行安装&nbsp;&nbsp;
+                                                        <a href="{$metron['client_android']['clash']['down']}" >&nbsp;备用下载链接</a>&nbsp;
+                                                    </p>
                                                 </div>
                                                 {*                                                    <div class="col-sm-12 col-md-12 col-lg-5">*}
                                                 {*                                                        <a class="image-popup-no-margins" href="{$metron['assets_url']}/media/tutorial/android/clashr/clashr.png" data-lightbox="images">*}
