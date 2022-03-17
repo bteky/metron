@@ -86,7 +86,7 @@ $_MT['enable_cust']                 = 'crisp';                   // 使用哪种
 $_MT['enable_cust_auth']            = true;                     // 在登录注册页显示客服
 
 # crisp  |  https://crisp.chat
-$_MT['crisp_id']                    = 'dfedd6ce-e3c9-4c8d-bdb1-b03229a9bb8c';  // Crisp 的网站ID，格式类似 '18b46e92-eb21-76d3-bfb7-8f2ae9adba64'
+$_MT['crisp_id']                    = 'df511ed1-ec47-4ad6-85a8-e533d54add7a';  // Crisp 的网站ID，格式类似 '18b46e92-eb21-76d3-bfb7-8f2ae9adba64'
 
 # chatra  |  https://chatra.io
 $_MT['chatra_id']                   = '';  // Chatra 的 ChatraID，可以在 Chatra 提供的网站代码里找到
