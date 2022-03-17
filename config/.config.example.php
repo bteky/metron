@@ -52,8 +52,8 @@ $_ENV['mailgun_sender'] = '';
 
 # smtp
 $_ENV['smtp_host'] = 'smtp.zoho.com';                          // SMTP 邮局服务器域名
-$_ENV['smtp_username'] = 'yz@ssvipmail.xyz';                          // SMTP 账户名
-$_ENV['smtp_password'] = 'yz_Admin321';                           // SMTP 账户密码
+$_ENV['smtp_username'] = 'nx@ssvipmail.xyz';                          // SMTP 账户名
+$_ENV['smtp_password'] = 'nx_Admin321';                           // SMTP 账户密码
 $_ENV['smtp_port'] = 465;                         // SMTP 端口(常见端口 25, 587 465)
 $_ENV['smtp_name'] = '柚子加速器';                          // SMTP 发信名称
 $_ENV['smtp_sender'] = 'yz@ssvipmail.xyz';                          // SMTP 账户发信地址
@@ -63,7 +63,7 @@ $_ENV['smtp_reply_to_name'] = $_ENV['smtp_sender'];        // 回复地址显示
 
 # sendgrid
 $_ENV['sendgrid_key'] = '';
-$_ENV['sendgrid_sender'] = 'yz@ssvipmail.xyz';       //发件邮箱
+$_ENV['sendgrid_sender'] = 'nx@ssvipmail.xyz';       //发件邮箱
 $_ENV['sendgrid_name'] = '柚子加速器';       //发件人名称
 
 # 阿里云邮件推送 WEB API
