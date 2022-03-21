@@ -52,18 +52,18 @@ $_ENV['mailgun_sender'] = '';
 
 # smtp
 $_ENV['smtp_host'] = 'smtp.zoho.com';                          // SMTP 邮局服务器域名
-$_ENV['smtp_username'] = 'oneky@ssvipmail.xyz';                          // SMTP 账户名
-$_ENV['smtp_password'] = 'oneky_Admin321';                           // SMTP 账户密码
+$_ENV['smtp_username'] = 'lingxi@oneky.xyz';                          // SMTP 账户名
+$_ENV['smtp_password'] = 'lingxi_Admin6688';                           // SMTP 账户密码
 $_ENV['smtp_port'] = 465;                         // SMTP 端口(常见端口 25, 587 465)
 $_ENV['smtp_name'] = '小火箭加速器';                          // SMTP 发信名称
-$_ENV['smtp_sender'] = 'oneky@ssvipmail.xyz';                          // SMTP 账户发信地址
+$_ENV['smtp_sender'] = 'lingxi@oneky.xyz';                          // SMTP 账户发信地址
 $_ENV['smtp_ssl'] = true;                        // 是否使用 TLS/SSL 发信
 $_ENV['smtp_reply_to'] = $_ENV['smtp_username'];      // 用户回复邮件的接受地址
 $_ENV['smtp_reply_to_name'] = $_ENV['smtp_sender'];        // 回复地址显示名
 
 # sendgrid
 $_ENV['sendgrid_key'] = '';
-$_ENV['sendgrid_sender'] = 'oneky@ssvipmail.xyz';       //发件邮箱
+$_ENV['sendgrid_sender'] = 'lingxi@oneky.xyz';       //发件邮箱
 $_ENV['sendgrid_name'] = '小火箭加速器';       //发件人名称
 
 # 阿里云邮件推送 WEB API
