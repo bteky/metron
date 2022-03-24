@@ -26,10 +26,10 @@ def send_email(receiver,expireTime):
     message['To'] = receiver
 
     # 关于ssl
-    server = smtplib.SMTP_SSL('smtp.zoho.com', 465)
+    server = smtplib.SMTP_SSL('smtp.zoho.jp', 465)
     try:
         # 登陆邮箱，发送邮件退出登陆
-        server.login('lingxi@oneky.xyz', 'lingxi_Admin6688')
+        server.login('onekys@zohomail.jp', 'EdATb7PdMVRM')
         server.sendmail(sender, [receiver], message.as_string())
         server.quit()
     except smtplib.SMTPException:
@@ -60,7 +60,7 @@ if __name__ == '__main__':
           email = row[0]
           expireTime = row[1]
           send_email(email, expireTime)
-          time.sleep(3 * 60)
+          time.sleep(7 * 60)
     except:
        print ("send expire mail fail : unable to fetch data")
 
