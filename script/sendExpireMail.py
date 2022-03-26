@@ -26,10 +26,10 @@ def send_email(receiver,expireTime):
     message['To'] = receiver
 
     # 关于ssl
-    server = smtplib.SMTP_SSL('smtp.zoho.com', 465)
+    server = smtplib.SMTP_SSL('smtp.zoho.cn', 465)
     try:
         # 登陆邮箱，发送邮件退出登陆
-        server.login('lingxi@oneky.xyz', 'lingxi_Admin6688')
+        server.login('onekyss@zohomail.cn', '5pdg68NBKR2p')
         server.sendmail(sender, [receiver], message.as_string())
         server.quit()
     except smtplib.SMTPException:
