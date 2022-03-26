@@ -31,6 +31,7 @@ def send_email(receiver,expireTime):
         # 登陆邮箱，发送邮件退出登陆
         server.login('lingxi@oneky.xyz', 'lingxi_Admin6688')
         server.sendmail(sender, [receiver], message.as_string())
+        print("send email")
         server.quit()
     except smtplib.SMTPException:
         print(receiver)
@@ -56,11 +57,14 @@ if __name__ == '__main__':
        cursor.execute(sql)
        # 获取所有记录列表
        results = cursor.fetchall()
+       print(results)
        for row in results:
+          print(row)
           email = row[0]
           expireTime = row[1]
           send_email(email, expireTime)
-          time.sleep(7 * 60)
+          print("end")
+          time.sleep(5 * 60)
     except:
        print ("send expire mail fail : unable to fetch data")
 
