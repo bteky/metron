@@ -125,7 +125,7 @@ $_ENV['port_price_specify'] = -1;           //用户指明钦定端口所需要�
 $_ENV['class_expire_reset_traffic'] = 0;            //等级到期时重置为的流量值，单位GB，小于0时不重置
 $_ENV['account_expire_delete_days'] = -1;           //账户到期几天之后会删除账户，小于0时不删除
 
-$_ENV['enable_kill'] = true;         //是否允许用户注销账户
+$_ENV['enable_kill'] = false;         //是否允许用户注销账户
 
 #用户流量余量不足邮件提醒
 $_ENV['notify_limit_mode'] = false;         //false为关闭，per为按照百分比提醒，mb为按照固定剩余流量提醒
