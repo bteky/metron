@@ -520,7 +520,7 @@ $_ENV['Speedtest_duration'] = 6;           //显示多长时间的测速记录
 
 $_ENV['login_warn'] = true;                  //异地登陆提示
 $_ENV['timeZone'] = 'PRC';                 //PRC 天朝时间  UTC 格林时间
-$_ENV['theme'] = 'metron';            //默认主题
+$_ENV['theme'] = 'malio';            //默认主题
 $_ENV['jump_delay'] = 1200;                  //跳转延时，单位ms，不建议太长
 
 $_ENV['pacp_offset'] = -20000;              //VPN 端口偏移
