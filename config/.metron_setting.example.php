@@ -192,7 +192,7 @@ $_MT['pay_qqpay']      = 'none';      // QQ钱包默认
 $_MT['max_qqpay_num']  = 0;     // 使用微信支付时, 金额大于等于设定值, 使用下方支付方式
 $_MT['max_qqpay_pay']  = 'none';  // 支付金额大于上面设置的值时, 使用此支付方式
 
-$_MT['pay_crypto']     = 'none';	// 数字货币支付
+$_MT['pay_crypto']     = 'bob_tron_pay';	// 数字货币支付
 
 $_MT['mix_amount'] = 0;     // 限制每次最低充值, 商店购买套餐不受此限制。（因为商店扣除余额后可能出现很低的金额）
 
@@ -372,3 +372,11 @@ $_MT['auto_reset_mode'] = 'sspanel';
 $_MT['auto_close_ticket'] = true;       // 自动关闭用户没有回复的工单
 $_MT['close_ticket_time'] = 3;          // 用户多久(天)没有回复的工单自动关闭
 $_MT['del_user_ticket']   = true;       // 清理用户不存在的工单
+
+# 节点显示流媒体检测结果
+$_MT['show_stream_media']  = true;
+//流媒体解锁 如下设置将使397，297号节点复用4号节点的检测结果 使用时去掉注释符 //
+$_MT['streaming_media_unlock_multiplexing'] = [
+    //'397' => '4',
+    //'297' => '4',
+];
