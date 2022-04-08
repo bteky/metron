@@ -47,9 +47,9 @@ if __name__ == '__main__':
 
     # SQL 查询语句
     sql = """SELECT email,class_expire
-    FROM `user`
-    where class_expire < date(now())
-    and class_expire > DATE_ADD(date(now()),INTERVAL -1 DAY)"""
+                 FROM `user`
+                 where class_expire > date_sub(now(),INTERVAL 1 HOUR)
+                 and class_expire < now()"""
 
     try:
        # 执行SQL语句
