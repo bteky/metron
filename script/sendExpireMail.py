@@ -21,7 +21,7 @@ def send_email(receiver,expireTime):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "柚子加速器 - 账户过期提醒!"
+    message['Subject'] = "柚子加速器 - 账户过期提醒!!!"
     message['From'] = sender
     message['To'] = receiver
 
@@ -47,9 +47,9 @@ if __name__ == '__main__':
 
     # SQL 查询语句
     sql = """SELECT email,class_expire
-    FROM `user`
-    where class_expire < date(now())
-    and class_expire > DATE_ADD(date(now()),INTERVAL -1 DAY)"""
+           FROM `user`
+           where class_expire > date_sub(now(),INTERVAL 1 HOUR)
+           and class_expire < now()"""
 
     try:
        # 执行SQL语句
