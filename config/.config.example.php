@@ -299,6 +299,14 @@ $_ENV['enable_checkin_captcha'] = false;        //启用签到验证码
 # Metron主题支持的支付方式都在 metron_setting.php 设置, 不要修改这里的支付方式， 只需要修改支付系统的参数
 $_ENV['payment_system'] = 'metronpay';    # 不要动!!!
 
+#KPay 快支付
+$_ENV['kpay'] = [
+    'epay_pid' => '1248',
+    'epay_key' => '6LVPVcbOzwb6BMbvHbQWoOY7T0bM0zHv',
+    'transport' => 'https',
+];
+
+#橘子支付
 $_ENV['SPEEDPay']=[
     'partner' => "1309", //商户号
     'key' => "MWVE7lkG95EV5WO7Ii9lGKL9WmlxVemX", //商户key

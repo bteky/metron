@@ -21,12 +21,12 @@ class Epay extends AbstractPayment
 
     public function __construct()
     {
-        $this->epay['apiurl'] = 'https://pay.pyclouds.com/';//
-        $this->epay['partner'] = $_ENV['pycloudspay']['epay_pid'];//易支付商户pid
-        $this->epay['key'] = $_ENV['pycloudspay']['epay_key'];//易支付商户Key
+        $this->epay['apiurl'] = $_ENV['kpay']['epay_url'];//
+        $this->epay['partner'] = $_ENV['kpay']['epay_pid'];//易支付商户pid
+        $this->epay['key'] = $_ENV['kpay']['epay_key'];//易支付商户Key
         $this->epay['sign_type'] = strtoupper('MD5'); //签名方式
         $this->epay['input_charset'] = strtolower('utf-8');//字符编码
-        $this->epay['transport'] = $_ENV['pycloudspay']['transport'];//协议 http 或者https
+        $this->epay['transport'] = $_ENV['kpay']['transport'];//协议 http 或者https
     }
 
     public function MetronPay($type, $price, $buyshop, $paylist_id=0)
@@ -55,7 +55,7 @@ class Epay extends AbstractPayment
             "pid" => trim($this->epay['partner']),
             "type" => $type,
             "out_trade_no" => $pl->tradeno,
-            "notify_url" => $_ENV['baseUrl'] . "/payment/notify/pycloudspay",
+            "notify_url" => $_ENV['baseUrl'] . "/payment/notify/epay",
             "return_url" => $_ENV['baseUrl'] . "/user/payment/return",
             "name" => $_ENV['appName'] . "充值" . $pl->total . "元",
             "money" => $pl->total,
@@ -63,7 +63,7 @@ class Epay extends AbstractPayment
         );
         $alipaySubmit = new Epay_submit($this->epay);
         $html_text = $alipaySubmit->buildRequestForm($data);
-        $result = array('code'=>$html_text,'errcode'=>0,'tradeno' => $pl->tradeno );
+        $result = array('code'=>$html_text,'errcode'=>0,'tradeno' => $pl->tradeno ,'msg'=>'success');
         return $result;
     }
 
@@ -88,8 +88,8 @@ class Epay extends AbstractPayment
             "pid" => trim($this->epay['partner']),
             "type" => $type,
             "out_trade_no" => $pl->tradeno,
-            "notify_url" => Config::get('baseUrl') . "/epay/notify",
-            "return_url" => Config::get('baseUrl') . "/epay/return",
+            "notify_url" => Config::get('baseUrl') . "/kpay/notify",
+            "return_url" => Config::get('baseUrl') . "/kpay/return",
             "name" => Config::get('appName') . "充值" . $price . "元",
             "money" => $price,
             "sitename" => Config::get('appName')
@@ -115,6 +115,9 @@ class Epay extends AbstractPayment
                     break;
                 case 'wxpay':
                     $type = "Epay-微信";
+                    break;
+                case 'bitpay':
+                    $type = "Epay-USDT";
                     break;
             }
             $trade_status = $_GET['trade_status'];

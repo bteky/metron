@@ -180,17 +180,21 @@ $_MT['shared_account'] = [
 # 微信  : codepay | stripe | paytaro | wolfpay_ur | payjs
 # QQ钱包: codepay |
 
-$_MT['pay_alipay']     = 'SPEEDPay';        // 支付宝默认
+$_MT['pay_alipay']     = 'kpay';        // 支付宝默认
 $_MT['max_alipay_num'] = 0;     // 使用支付宝支付时, 金额大于等于设定值, 使用下方支付方式 (设置 0 不使用)
 $_MT['max_alipay_pay'] = 'none';      // 支付金额大于上面设置的值时, 使用此支付方式
 
-$_MT['pay_wxpay']      = 'SPEEDPay';      // 微信默认
+$_MT['pay_wxpay']      = 'kpay';      // 微信默认
 $_MT['max_wxpay_num']  = 0;     // 使用微信支付时, 金额大于等于设定值, 使用下方支付方式 (设置 0 不使用)
 $_MT['max_wxpay_pay']  = 'none';  // 支付金额大于上面设置的值时, 使用此支付方式
 
 $_MT['pay_qqpay']      = 'none';      // QQ钱包默认
 $_MT['max_qqpay_num']  = 0;     // 使用微信支付时, 金额大于等于设定值, 使用下方支付方式
 $_MT['max_qqpay_pay']  = 'none';  // 支付金额大于上面设置的值时, 使用此支付方式
+
+$_MT['pay_bitpay']      = 'kpay';      //USDT
+$_MT['max_bitpay_num']  = 0;     // 使用微信支付时, 金额大于等于设定值, 使用下方支付方式
+$_MT['max_bitpay_pay']  = 'none';  // 支付金额大于上面设置的值时, 使用此支付方式
 
 $_MT['pay_crypto']     = 'none';	// 数字货币支付
 
@@ -355,7 +359,7 @@ $_MT['client_ios'] = [
 # 教程页共享账号
 $_MT['ios_class']    = 1;    //iOS账户多少级以上可见(包括)
 $_MT['ios_account']  = 'awkys96@gmail.com';    //iOS账户
-$_MT['ios_password'] = 'Ky772266';    //ios密码
+$_MT['ios_password'] = 'Ky772277';    //ios密码
 
 # ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 # │                                              任务计划 设置                                               │
