@@ -301,6 +301,7 @@ $_ENV['payment_system'] = 'metronpay';    # 不要动!!!
 
 #KPay 快支付
 $_ENV['kpay'] = [
+    'epay_url' => 'https://oc.mmnxdk.cn/',
     'epay_pid' => '1248',
     'epay_key' => '6LVPVcbOzwb6BMbvHbQWoOY7T0bM0zHv',
     'transport' => 'https',
