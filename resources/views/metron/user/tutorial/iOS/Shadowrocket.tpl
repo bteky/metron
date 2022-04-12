@@ -60,7 +60,8 @@
                                                         <img class="rounded-lg" style="width:100%" src="/theme/metron/images/ios/ios-1.jpg"/></a>
                                                     <br />
                                                     <br />
-                                                    <p class="font-size-h3 pb-2"><code>2.</code>打开apple store复制下面的海外账户账号与密码点击登录（切记！是apple store登录，不是设置里面登录！），<span style="color: green; font-size: medium; ">跳过双重验证：</span><code>苹果商店(登录下面账号)</code> -&gt; <code>其他选项</code> -&gt; <code>不升级</code></p>
+                                                    <p class="font-size-h3 pb-2"><code>2.</code>打开apple store复制下面的海外账户账号与密码点击登录（切记！是apple store登录，不是设置里面登录！），<span style="color: green; font-size: medium; ">跳过双重验证：</span><code>苹果商店(登录下面账号)</code> -&gt; <code>其他选项</code> -&gt; <code>不升级</code>
+                                                        ------<a href="/user/shop" class="btn  btn-success font-weight-bold btn-pill color: green">点击购买套餐</a></p>
                                                     {if $metron['ios_account'] != ''}
                                                         {if $user->class >= $metron['ios_class'] && $user->class != 10}
                                                             <div class="input-group mb-3 col-md-8 col-lg-8">
@@ -79,11 +80,12 @@
                                                         {else}
                                                             <div class="alert alert-primary" role="alert">
                                                                 <div class="alert-text mt-3">
-                                                                    <h4 class="alert-heading">您的等级不支持查看共享账号</h4>
-                                                                    <hr>
-                                                                    <p class="mb-2">Shadowrocket为App Store商店付费软件，为防止频繁登录而导致被封号，共享账号仅对 <code>Lv.{$metron['ios_class']}及以上会员</code> 提供。<br>
-                                                                        当您成为 <code>Lv.{$metron['ios_class']}及以上会员</code> 时(不包括试用会员)，该页面会自动显示共享账号。<br>
-                                                                        您可通过其他渠道进行安装下载Shadowrocket，具体可至搜索引擎搜索资源。</p>
+                                                                    <h4 class="alert-heading">您的账户已过期，请购买套餐后使用</h4>
+
+{*                                                                    <hr>*}
+{*                                                                    <p class="mb-2">Shadowrocket为App Store商店付费软件，为防止频繁登录而导致被封号，共享账号仅对 <code>Lv.{$metron['ios_class']}及以上会员</code> 提供。<br>*}
+{*                                                                        当您成为 <code>Lv.{$metron['ios_class']}及以上会员</code> 时(不包括试用会员)，该页面会自动显示共享账号。<br>*}
+{*                                                                        您可通过其他渠道进行安装下载Shadowrocket，具体可至搜索引擎搜索资源。</p>*}
                                                                 </div>
                                                             </div>
                                                         {/if}
