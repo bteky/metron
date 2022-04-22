@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 
 def send_email(receiver,expireTime):
     # 接收方／发送方，接收方是一个list，可以接受多个数值
-    sender = 'onekyss@zohomail.cn'
+    sender = 'onekys@zohomail.jp'
 
     contant = """<div dir="ltr">
         ﻿亲亲，您账号的过期时间是：<font color="darkred">%s</font>
