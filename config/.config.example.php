@@ -58,7 +58,7 @@ $_ENV['smtp_port'] = 465;                         // SMTP 端口(常见端口 25
 $_ENV['smtp_name'] = '柚子加速器';                          // SMTP 发信名称
 $_ENV['smtp_sender'] = 'nxyyds@zohomail.com';                          // SMTP 账户发信地址
 $_ENV['smtp_ssl'] = true;                        // 是否使用 TLS/SSL 发信
-$_ENV['smtp_reply_to'] = $_ENV['nx@ssvipmail.xyz'];      // 用户回复邮件的接受地址
+$_ENV['smtp_reply_to'] = $_ENV['smtp_username'];      // 用户回复邮件的接受地址
 $_ENV['smtp_reply_to_name'] = $_ENV['smtp_sender'];        // 回复地址显示名
 
 # sendgrid
@@ -301,8 +301,8 @@ $_ENV['payment_system'] = 'metronpay';    # 不要动!!!
 
 
 $_ENV['SPEEDPay']=[
-    'partner' => "1308", //商户号
-    'key' => "i8XIVv9CT9xvlCMdfXn8I8dILvlxi4ZD", //商户key
+    'partner' => "1006", //商户号
+    'key' => "Zf3Rct6gdrAC8v6Y3vCYgFZt8yDCU171", //商户key
     'sign_type' => strtoupper('MD5'),
     'input_charset' => strtolower('utf-8'),
     'subjects' => "柚子套餐",                  //商品名称，目前无意义
