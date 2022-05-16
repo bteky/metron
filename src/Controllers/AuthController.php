@@ -370,26 +370,26 @@ class AuthController extends BaseController
         if ($c == null) {
             if (Config::getconfig('Register.string.Mode') === 'invite' && MetronSetting::get('register_code') === true) {
                 $res['ret'] = 0;
-                $res['msg'] = '邀请码无效';
+                $res['msg'] = '注册链接: https://www.oneky.xyz/auth/register';
                 return $res;
             }
         } elseif ($c->user_id != 0) {
             $gift_user = User::where('id', '=', $c->user_id)->first();
             if ($gift_user == null) {
                 $res['ret'] = 0;
-                $res['msg'] = '邀请人不存在';
+                $res['msg'] = '注册链接: https://www.oneky.xyz/auth/register';
                 return $res;
             }
 
             if ($gift_user->class == 0) {
                 $res['ret'] = 0;
-                $res['msg'] = '邀请人不是VIP';
+                $res['msg'] = '注册链接: https://www.oneky.xyz/auth/register';
                 return $res;
             }
 
             if ($gift_user->invite_num == 0) {
                 $res['ret'] = 0;
-                $res['msg'] = '邀请人可用邀请次数为0';
+                $res['msg'] = '注册链接: https://www.oneky.xyz/auth/register';
                 return $res;
             }
         }
