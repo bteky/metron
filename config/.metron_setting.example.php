@@ -7,9 +7,9 @@
 // └───────────────────────────────────────────────────────────────────────────────────────────────────────┘ \\
 
 #####  主题设置  --------------------------------------------------------------------------------------------
-$_MT['assets_true'] = false;                 // 目前不要动, 保持 true
+$_MT['assets_true'] = true;                 // 目前不要动, 保持 true
 $_MT['assets_bb']   = '3.0.2';                // 版本
-$_MT['assets_url']  = $_MT['assets_true']?'https://cdn.jsdelivr.net/gh/mt-theme/metron-assets@'.$_MT['assets_bb'].'/metron' : '/theme/metron';
+$_MT['assets_url']  = $_MT['assets_true']?'https://gcore.jsdelivr.net/gh/mt-theme/metron-assets@'.$_MT['assets_bb'].'/metron' : '/theme/metron';
 
 $_MT['style_shadow'] = 'rounded-lg shadow';    // 卡片圆角: rounded / rounded-lg / rounded-xl ; 卡片阴影: shadow / shadow-lg
 
