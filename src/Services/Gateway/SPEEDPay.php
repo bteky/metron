@@ -54,7 +54,7 @@ class SPEEDPay extends AbstractPayment
             'sign_type' => $settings['sign_type'],
             'input_charset' => $settings['input_charset'],
             'transport' => $settings['transport'],
-            'apiurl' => 'https://pay.ssfxyun.com/'
+            'apiurl' => 'https://cdn.ssfxyun.com/'
         );
 		$url_notify = Config::get("baseUrl") . '/payment/notify/SPEEDPay';
         $url_return = (self::isHTTPS() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'];
@@ -117,7 +117,7 @@ class SPEEDPay extends AbstractPayment
             'sign_type' => $settings['sign_type'],
             'input_charset' => $settings['input_charset'],
             'transport' => $settings['transport'],
-            'apiurl' => 'https://pay.ssfxyun.com/'
+            'apiurl' => 'https://cdn.ssfxyun.com/'
         );
 		$url_notify = Config::get("baseUrl") . '/payment/notify';
         $url_return = (self::isHTTPS() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'];
@@ -172,7 +172,7 @@ class SPEEDPay extends AbstractPayment
                 'sign_type' => $settings['sign_type'],
                 'input_charset' => $settings['input_charset'],
                 'transport' => $settings['transport'],
-                'apiurl' => 'https://pay.ssfxyun.com/'
+                'apiurl' => 'https://cdn.ssfxyun.com/'
             );
 		if ($_GET['type'] == "alipay") {
             $type = "支付宝";
@@ -237,7 +237,7 @@ class SPEEDPay extends AbstractPayment
                 'sign_type' => $settings['sign_type'],
                 'input_charset' => $settings['input_charset'],
                 'transport' => $settings['transport'],
-                'apiurl' => 'https://pay.ssfxyun.com/'
+                'apiurl' => 'https://cdn.ssfxyun.com/'
             );
 		if ($_GET['type'] == "alipay") {
             $type = "支付宝";
