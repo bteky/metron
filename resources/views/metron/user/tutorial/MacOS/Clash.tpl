@@ -59,7 +59,7 @@
                                             <div class="row p-5">
                                                 <div class="col-sm-12 col-md-12 col-lg-7 pb-5">
                                                     <p class="font-size-h1 pb-5"><strong>1. 下载安装客户端</strong></p>
-                                                    <a href="https://down.ssvipmail.xyz/client/mac.dmg" class="btn btn-pill btn-clash mb-4">&nbsp;&nbsp;<i class="metron-clash text-white"></i>点击下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
+                                                    <a href="https://down.avanter.xyz/client/mac.dmg" class="btn btn-pill btn-clash mb-4">&nbsp;&nbsp;<i class="metron-clash text-white"></i>点击下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
                                                     <br />
                                                     <p class="mb-2"><a href="{$metron['client_macos']['clash']['down']}" class="mb-4">&nbsp;&nbsp;备用下载链接</a>&nbsp;&nbsp;&nbsp;下载并进行拖动安装</p>
                                                     <p class="mb-2">在启动台开启应用,如有弹窗务必点确定,有密码就输入</p>
