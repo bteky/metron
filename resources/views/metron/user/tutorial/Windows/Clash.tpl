@@ -80,7 +80,7 @@
                                                     <p class="font-size-h1 pb-5"><strong>1. 下载客户端</strong></p>
                                                     <!-- 结束 :: 段落标题 -->
                                                     <!-- 开始 :: 客户端下载按钮 -->
-                                                    <a href="https://down.ssvipmail.xyz/client/win.exe" class="btn btn-pill btn-clash mb-4" target="_blank">&nbsp;&nbsp;<i class="metron-clash text-white"></i>点击下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
+                                                    <a href="https://down.avanter.xyz/client/win.exe" class="btn btn-pill btn-clash mb-4" target="_blank">&nbsp;&nbsp;<i class="metron-clash text-white"></i>点击下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
                                                     <!-- 结束 :: 客户端下载按钮 -->
                                                     <br />
                                                     <div class="h6 pt-2">

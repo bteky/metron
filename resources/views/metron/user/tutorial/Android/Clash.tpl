@@ -69,7 +69,7 @@
                                             <div class="row p-5">
                                                 <div class="col-sm-12 col-md-12 col-lg-7 pb-5">
                                                     <p class="font-size-h1 pb-5"><strong>1. 下载客户端</strong></p>
-                                                    <a href="https://down.ssvipmail.xyz/client/android.apk" class="btn btn-pill btn-clash mb-4">&nbsp;&nbsp;<i class="metron-clash text-white"></i>点击下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
+                                                    <a href="https://down.avanter.xyz/client/android.apk" class="btn btn-pill btn-clash mb-4">&nbsp;&nbsp;<i class="metron-clash text-white"></i>点击下载 Clash 客户端</a>&nbsp;&nbsp;&nbsp;
                                                     <p class="mb-2">
                                                         点击上方按钮下载客户端并进行安装&nbsp;&nbsp;
                                                         <a href="{$metron['client_android']['clash']['down']}" >&nbsp;备用下载链接</a>&nbsp;
