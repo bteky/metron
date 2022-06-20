@@ -319,6 +319,12 @@ $_ENV['SPEEDPay']=[
     'min_price' => '1'                       //最小支付金额(请填正数)
 ];
 
+#wellpay
+$_ENV['wellpay_app_id'] = 'pz6BBBzi6gPQ'; #（wellpay后台->个人中心->开发信息->应用id）
+$_ENV['wellpay_app_secret'] = 'ee2e0a550d2aa6a68b22f6a7df8391b3';#（wellpay后台->个人中心->开发信息->应用秘钥）
+$_ENV['server_id'] = '1';#（业务网址白名单ID，wellpay后台->个人中心->白名单->server_id）
+#如果配置文件中其他的配置用的是$config方式写的配置，就不用env，跟其他的一样用config
+
 #橘子支付
 //$_ENV['SPEEDPay']=[
 //    'partner' => "1308", //商户号
