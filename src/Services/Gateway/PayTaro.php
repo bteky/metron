@@ -9,6 +9,7 @@ use App\Models\Paylist;
 class PayTaro extends AbstractPayment
 {
 
+    private $appID;
     private $appSecret;
     private $gatewayUri;
 
@@ -19,8 +20,9 @@ class PayTaro extends AbstractPayment
 
     public function __construct($appSecret)
     {
-        $this->appSecret = $appSecret;
-        $this->gatewayUri = 'https://api.paytaro.com/v1/gateway/fetch';
+        $this->appID = $_ENV['theadpay_mchid'];
+        $this->appSecret = $_ENV['theadpay_key'];
+        $this->gatewayUri = $_ENV['theadpay_url'] . '/v1/gateway/fetch';
     }
 
 
@@ -93,7 +95,7 @@ class PayTaro extends AbstractPayment
             }
         }
 
-        $data['app_id'] = Config::get('paytaro_app_id');
+        $data['app_id'] = $this->appID;
         $data['out_trade_no'] = $pl->tradeno;
         $data['total_amount'] = (int)($pl->total * 100);
         $data['notify_url'] = Config::get('baseUrl') . '/payment/notify/paytaro';
@@ -120,7 +122,7 @@ class PayTaro extends AbstractPayment
         $pl->total = $price;
         $pl->tradeno = self::generateGuid();
         $pl->save();
-        $data['app_id'] = Config::get('paytaro_app_id');
+        $data['app_id'] = $this->appID;
         $data['out_trade_no'] = $pl->tradeno;
         $data['total_amount'] = (int)$price * 100;
         $data['notify_url'] = Config::get('baseUrl') . '/payment/notify';
@@ -137,7 +139,7 @@ class PayTaro extends AbstractPayment
 
     public function query($tradeNo)
     {
-        $data['appId'] = Config::get('trimepay_appid');
+        $data['appId'] = $this->appID;
         $data['merchantTradeNo'] = $tradeNo;
         $params = $this->prepareSign($data);
         $data['sign'] = $this->sign($params);
