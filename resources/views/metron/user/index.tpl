@@ -112,9 +112,9 @@
                                                             <strong>{$user->unusedTraffic()}</strong></div>
                                                         <p class="text-dark-50">剩余流量</p>
                                                     </div>
-                                                    <div class="d-flex flex-column">
-                                                        <a href="/user/node" class="btn btn-primary font-weight-bold btn-pill">节点列表</a>
-                                                    </div>
+{*                                                    <div class="d-flex flex-column">*}
+{*                                                        <a href="/user/node" class="btn btn-primary font-weight-bold btn-pill">节点列表</a>*}
+{*                                                    </div>*}
                                                 </div>
                                             </div>
                                             <div class="card-body pt-2 pl-5 pr-3 pb-1">
@@ -128,42 +128,42 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-lg-6 col-xl-3 ">
-                                        <div class="card card-custom mb-8 {$style[$theme_style]['index']['dash4']['bg']} {$metron['style_shadow']}">
-                                            <div class="card-body pt-6 pl-4 pb-0">
-                                                <div class="d-flex pt-4 pl-4 pr-4 pb-0">
-                                                    <span class="svg-icon svg-icon-4x {$style[$theme_style]['index']['dash4']['svg']}">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                                                             height="24px" viewBox="0 0 24 24" version="1.1">
-                                                            <g stroke="none" stroke-width="1" fill="none"
-                                                               fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24"/>
-                                                                <circle fill="#000000" opacity="0.3" cx="20.5" cy="12.5"
-                                                                        r="1.5"/>
-                                                                <rect fill="#000000" opacity="0.3"
-                                                                      transform="translate(12.000000, 6.500000) rotate(-15.000000) translate(-12.000000, -6.500000) "
-                                                                      x="3" y="3" width="18" height="7" rx="1"/>
-                                                                <path d="M22,9.33681558 C21.5453723,9.12084552 21.0367986,9 20.5,9 C18.5670034,9 17,10.5670034 17,12.5 C17,14.4329966 18.5670034,16 20.5,16 C21.0367986,16 21.5453723,15.8791545 22,15.6631844 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,9.33681558 Z"
-                                                                      fill="#000000"/>
-                                                            </g>
-                                                        </svg>
-                                                    </span>
-                                                    <div class="d-flex flex-column ml-3 mr-5">
-                                                        <div class="font-size-h4 {$style[$theme_style]['index']['text']} mb-2">
-                                                            <strong>¥ {$user->money}</strong></div>
-                                                        <p class="text-dark-50">钱包余额</p>
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <a href="/user/code" class="btn btn-primary font-weight-bold btn-pill">余额充值</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body pt-2 pl-5 pr-3 pb-1">
-                                                <p class="text-dark-50">返利累计: ¥ {$paybacks_sum}</p>
-                                            </div>
-                                        </div>
-                                    </div>
+{*                                    <div class="col-sm-6 col-lg-6 col-xl-3 ">*}
+{*                                        <div class="card card-custom mb-8 {$style[$theme_style]['index']['dash4']['bg']} {$metron['style_shadow']}">*}
+{*                                            <div class="card-body pt-6 pl-4 pb-0">*}
+{*                                                <div class="d-flex pt-4 pl-4 pr-4 pb-0">*}
+{*                                                    <span class="svg-icon svg-icon-4x {$style[$theme_style]['index']['dash4']['svg']}">*}
+{*                                                        <svg xmlns="http://www.w3.org/2000/svg"*}
+{*                                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"*}
+{*                                                             height="24px" viewBox="0 0 24 24" version="1.1">*}
+{*                                                            <g stroke="none" stroke-width="1" fill="none"*}
+{*                                                               fill-rule="evenodd">*}
+{*                                                                <rect x="0" y="0" width="24" height="24"/>*}
+{*                                                                <circle fill="#000000" opacity="0.3" cx="20.5" cy="12.5"*}
+{*                                                                        r="1.5"/>*}
+{*                                                                <rect fill="#000000" opacity="0.3"*}
+{*                                                                      transform="translate(12.000000, 6.500000) rotate(-15.000000) translate(-12.000000, -6.500000) "*}
+{*                                                                      x="3" y="3" width="18" height="7" rx="1"/>*}
+{*                                                                <path d="M22,9.33681558 C21.5453723,9.12084552 21.0367986,9 20.5,9 C18.5670034,9 17,10.5670034 17,12.5 C17,14.4329966 18.5670034,16 20.5,16 C21.0367986,16 21.5453723,15.8791545 22,15.6631844 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,9.33681558 Z"*}
+{*                                                                      fill="#000000"/>*}
+{*                                                            </g>*}
+{*                                                        </svg>*}
+{*                                                    </span>*}
+{*                                                    <div class="d-flex flex-column ml-3 mr-5">*}
+{*                                                        <div class="font-size-h4 {$style[$theme_style]['index']['text']} mb-2">*}
+{*                                                            <strong>¥ {$user->money}</strong></div>*}
+{*                                                        <p class="text-dark-50">钱包余额</p>*}
+{*                                                    </div>*}
+{*                                                    <div class="d-flex flex-column">*}
+{*                                                        <a href="/user/code" class="btn btn-primary font-weight-bold btn-pill">余额充值</a>*}
+{*                                                    </div>*}
+{*                                                </div>*}
+{*                                            </div>*}
+{*                                            <div class="card-body pt-2 pl-5 pr-3 pb-1">*}
+{*                                                <p class="text-dark-50">返利累计: ¥ {$paybacks_sum}</p>*}
+{*                                            </div>*}
+{*                                        </div>*}
+{*                                    </div>*}
 {*                                    <div class="col-sm-6 col-lg-6 col-xl-3 ">*}
 {*                                        <div class="card card-custom mb-8 {$style[$theme_style]['index']['dash3']['bg']} {$metron['style_shadow']}">*}
 {*                                            <div class="card-body pt-6 pl-4 pb-0">*}
