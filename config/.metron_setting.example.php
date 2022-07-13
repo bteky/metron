@@ -75,7 +75,7 @@ $_MT['user_level'] = [      // 等级 => 对应的名称显示
 ];
 #####  用户注册  --------------------------------------------------------------------------------------------
 $_MT['register_code']               = false;          // true: 注册必须邀请码, false: 邀请码可不填 (admin面板 - 用户注册 - 将注册模式改为 invite)
-$_MT['register_restricted_email']   = false;      // 设置为true时，注册时必须使用指定的邮箱后缀;
+$_MT['register_restricted_email']   = true;      // 设置为true时，注册时必须使用指定的邮箱后缀;
 $_MT['list_of_available_mailboxes'] = [ '@qq.com', '@gmail.com', '@outlook.com', '@163.com', '@126.com', '@live.com', '@msn.com', '@yeah.net', '@foxmail.com', ];         // 注册邮箱可以使用的邮箱后缀,仅在上面设置为true时生效;
 $_MT['disable_mailbox_list']        = [ '@bcaoo.com', '@chacuo.net', '@tmpmail.net', '@tmail.ws', '@tmpmail.org', '@moimoi.re', '@bccto.me', '@027168.com', '@disbox.org', '@linshiyouxiang.net', '@t.odmail.cn', '@tmails.net', '@moakt.co', '@moakt.ws', '@disbox.net', '@bareed.ws', ];            // 注册邮箱禁止使用的邮箱后缀;
 
