@@ -358,8 +358,8 @@ $_MT['client_ios'] = [
 ];
 # 教程页共享账号
 $_MT['ios_class']    = 1;    //iOS账户多少级以上可见(包括)
-$_MT['ios_account']  = 'yzyyds2@gmail.com';    //iOS账户
-$_MT['ios_password'] = 'Rt113377';    //ios密码
+$_MT['ios_account']  = 'hi@enkys.xyz';    //iOS账户
+$_MT['ios_password'] = 'Rt226644';    //ios密码
 
 # ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 # │                                              任务计划 设置                                               │
